@@ -8,18 +8,20 @@
 
 import UIKit
 
-class InfosViewController: UIViewController {
+class InfosViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var background: UIView!
-    @IBOutlet weak var smiler: UIImageView!
-    @IBOutlet weak var smilerampu: UIImageView!
+    
+    var periodos : [Periodo]? = []
+    
     
     var sliderEquipes = MBSliderView()
     var sliderTempo = MBSliderView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.periodos = PeriodoStore.singleton.pegarPeriodo()
         self.background.backgroundColor = UIColor(patternImage: UIImage(named: "bg")!)
         
         sliderEquipeSettings()
@@ -32,7 +34,6 @@ class InfosViewController: UIViewController {
         sliderEquipes.step = 1
         sliderEquipes.ignoreDecimals = true  // default value
         sliderEquipes.animateLabel = false   // default value
-        sliderEquipes.delegate = self
         self.view.addSubview(sliderEquipes)
         
     }
@@ -57,31 +58,51 @@ class InfosViewController: UIViewController {
         sliderTempo.step = 1
         sliderTempo.ignoreDecimals = true  // default value
         sliderTempo.animateLabel = false   // default value 
-        sliderTempo.delegate = self
         self.view.addSubview(sliderTempo)
     }
     
+    //Mark: Collection Data Source
     
-    /*
-     
-     //MARK: Segue que manda os Períodos - Ainda tem que ver como será usada
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     
-     let periodoSelecionado = segue.destination as! JogoViewController
-     
-     }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        if self.periodos == nil {
+            return 0
+        }
+        return self.periodos!.count
+    }
     
-     
-   
-    //MARK: Segue que manda a quantidade de equipe
-     override func prepareEquipes(for segue: UIStoryboardSegue, sender: Any?) {
-        let quantidadeEquipe = segue.destination as! JogoViewController
-        quantidadeEquipe.quantidadeDeTimes = roundUp(number:sliderEquipes.currentValue!)
-     
-     }
-     
-   */
- 
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PlacarCollectionViewCell
+        let periodo = self.periodos?[indexPath.item]
+        
+        periodo?.pontos = 0
+        cell.imagem.image = periodo?.avatar
+        cell.nome.text = periodo?.nome
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! PlacarCollectionViewCell
+        let periodo = self.periodos![indexPath.item]
+        
+        
+        if periodo.pontos == 0 {
+            cell.nome.textColor = .red
+            cell.imagem.image = periodo.avatarPresented
+            periodo.pontos = 1
+        }else {
+            cell.nome.textColor = .gray
+            cell.imagem.image = periodo.avatar
+            periodo.pontos = 0
+        }
+        
+        
+    }
+    
+    
     
     //MARK: Segue que manda a quantidade de tempo para responder uma Mímica
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -108,32 +129,5 @@ class InfosViewController: UIViewController {
     }
     
     
-}
-
-
-extension InfosViewController: MBSliderDelegate {
-    func sliderView(_ sliderView: MBSliderView, valueDidChange value: Float) {
-        let intValue = roundUp(number: value)
-
-        if sliderView == sliderEquipes {
-            if intValue == 2 {
-                self.smiler.image = UIImage(named: "mime1")
-            }else if intValue == 3 {
-                self.smiler.image = UIImage(named: "mime2")
-            }else if intValue == 4   {
-                self.smiler.image = UIImage(named: "mime3")
-            }else{}
-            
-        } else if sliderView == sliderTempo {
-            if intValue == 1 {
-                self.smilerampu.image = UIImage(named: "ampu")
-            }else if intValue == 2 {
-                self.smilerampu.image = UIImage(named: "ampu2")
-            }else if intValue == 3 {
-                self.smilerampu.image = UIImage(named: "ampu3")
-            }else{}
-            
-        }
-    }
 }
 

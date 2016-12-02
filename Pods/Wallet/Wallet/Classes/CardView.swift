@@ -38,42 +38,21 @@ open class CardView: UIView {
     /** This method is called when the card view is tapped. */
     open func tapped() {
         if let _ = walletView?.presentedCardView {
-            
-            // MEXI NESSA POHA AKI (DAVID CAMURÇA = BEPID - AM)
-            //walletView?.dismissPresentedCardView(animated: true)
+            return
         } else {
             walletView?.present(cardView: self, animated: true)
         }
     }
     
-    /** This method is called when the card view is panned. */
-    
-    /** This method is called when the card view is long pressed. */
-    open func longPressed(gestureRecognizer: UILongPressGestureRecognizer) {
-        
-        switch gestureRecognizer.state {
-        case .began:
-            walletView?.grab(cardView: self, popup: true)
-        case .changed: ()
-        default:
-            walletView?.releaseGrabbedCardView()
-        }
-        
-        
-    }
-    
     // MARK: Private methods
     
     let tapGestureRecognizer    = UITapGestureRecognizer()
-    let longGestureRecognizer   = UILongPressGestureRecognizer()
     
     func setupGestures() {
         
         tapGestureRecognizer.addTarget(self, action: #selector(CardView.tapped))
         tapGestureRecognizer.delegate = self
         addGestureRecognizer(tapGestureRecognizer)
-        
-        
     }
     
     
@@ -89,21 +68,6 @@ open class CardView: UIView {
 }
 
 extension CardView: UIGestureRecognizerDelegate {
-    
-    /**
-     Asks the delegate if a gesture recognizer should begin interpreting touches.
-     
-     - parameter gestureRecognizer: An instance of a subclass of the abstract base class UIGestureRecognizer. This gesture-recognizer object is about to begin processing touches to determine if its gesture is occurring.
-     */
-    open override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        
-        if gestureRecognizer == longGestureRecognizer && presented {
-            return false
-        }
-        
-        return true
-        
-    }
     
     /**
      Asks the delegate if two gesture recognizers should be allowed to recognize gestures simultaneously.

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Mime History WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Pods-Mime History WatchKit Extension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Pods-Mime History.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Wallet.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1A5149547F7138BCC2285B7BDE73523C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F39E78F606DC593A157C4034E09EE3B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5C01FCA76B77BE947A6195A133AFE59</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC3D777D52AE56DAD1A2B957C2B58838</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -78,7 +78,8 @@ class JogoViewController: UIViewController, UICollectionViewDataSource, UICollec
             
             if let timeBase = timeBase{
                 
-                cardView.timeBase = TimeInterval(timeBase*60)
+                cardView.timeBase = TimeInterval(timeBase*6)
+                cardView.image.image = card.Ilustracao
                 cardView.titulo.text = card.Titulo
                 cardView.descricao.text = card.Descricao
                 cardView.subtitulo.text = card.Era
@@ -216,13 +217,10 @@ extension JogoViewController: WCSessionDelegate{
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
         
-        if message["comando"] as? String == "Acertou"{
-            
-            print("Chegou no Acerto")
-
-            let response = ["Acerto":"Acerto computado iOS"]
-            replyHandler(response)
-        }
+//        if message["comando"] as? String == "Acertou"{
+//            let response = ["Acerto":"Acerto computado iOS"]
+//            replyHandler(response)
+//        }
         
     }
     

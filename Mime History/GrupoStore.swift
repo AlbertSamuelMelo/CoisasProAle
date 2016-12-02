@@ -25,6 +25,17 @@ class GrupoStore {
         ("Cruzados",      0,      3,    #imageLiteral(resourceName: "cruzados"))
     ]
     
+    let dataPeriodos: [(String, Int, Int, UIImage)] = [
+        
+        //   Nome        Pontos     id          imagem
+        ("Grécia Antiga",   0,      0,    #imageLiteral(resourceName: "greciaAntigaPt")),
+        
+        ("Egito Antigo",     0,      1,    #imageLiteral(resourceName: "egitoAntigoPt")),
+        
+        ("Roma Antiga",    0,      2,    #imageLiteral(resourceName: "romaAntigaPt")),
+        
+    ]
+    
     //MARK: Pega grupos
     func pegarGrupo(_ value: Int)-> [Grupo] {
         
@@ -39,6 +50,25 @@ class GrupoStore {
             grupo.id = datagrupos[i].2
             grupo.avatar = datagrupos[i].3
         
+            grupos.append(grupo)
+        }
+        return grupos
+    }
+    
+    //MARK: Pega grupos
+    func pegarGrupo()-> [Grupo] {
+        
+        var grupos = [Grupo]()
+        
+        for dataPeriodo in self.dataPeriodos {
+            
+            let grupo = Grupo()
+            
+            grupo.nome = dataPeriodo.0
+            grupo.pontos = dataPeriodo.1
+            grupo.id = dataPeriodo.2
+            grupo.avatar = dataPeriodo.3
+            
             grupos.append(grupo)
         }
         return grupos

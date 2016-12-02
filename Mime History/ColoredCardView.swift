@@ -93,7 +93,6 @@ class ColoredCardView: CardView {
     }
     
     func qAcerta() {
-        
         // aqui essa linda funcao, pra nao falar outra coisa
         timerCowdown.invalidate()
         self.pontua = true
@@ -104,7 +103,6 @@ class ColoredCardView: CardView {
         
         UIView.animate(withDuration: 0.75, animations: {
         
-            sender.transform = CGAffineTransform(scaleX: 2, y: 2)
             self.descricaoView.transform = CGAffineTransform(translationX: 0, y: (self.walletView?.frame.height)!)
         }) { (finished) in
             
@@ -112,6 +110,7 @@ class ColoredCardView: CardView {
         }
         timeBonds = cowdownView.bounds.width/CGFloat(timeBase!)
         playRegress()
+        
         //verificando se e suportado
         if WCSession.isSupported(){
             session = WCSession.default()
@@ -146,7 +145,11 @@ class ColoredCardView: CardView {
             //Finish Cronometro regressivo
             timerCowdown.invalidate()
             self.pontua = false
-            estaGanhado()
+            
+            //Enviar notification quando o tempo acabar
+            let delegate = UIApplication.shared.delegate as? AppDelegate
+//            delegate.asd
+            
             self.dismiss()
         }
     }
@@ -191,24 +194,22 @@ class ColoredCardView: CardView {
 
 
 extension ColoredCardView: WCSessionDelegate{
-    
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         print("iOS: Session Ativado.")
     }
     
     func sessionDidBecomeInactive(_ session: WCSession) {
     }
+    
     func sessionDidDeactivate(_ session: WCSession) {
     }
     
+    
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
-        
         if message["comando"] as? String == "Acertou"{
-            
-            print("Chegou no Acerto")
-            
-            self.qAcerta()
-            
+            timerCowdown.invalidate()
+            self.pontua = true
+            self.dismiss()
             let response = ["Acerto":"Acerto computado iOS"]
             replyHandler(response)
         }

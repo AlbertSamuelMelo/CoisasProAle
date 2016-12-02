@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		17A8F81E63D6D5B8E994D3681666067B /* Pods-Mime History-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC2FE89966DBF87EEE9D41AC401E456E /* Pods-Mime History-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BC4EDF5FB7F401F3CFCF33607CD5544 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859C2B40C5654DC65ABDBEE9FCD129B7 /* WalletView.swift */; };
 		34EE87BFF25970D8B384CE969A7FC9F3 /* Pods-Mime History-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD807356ED940CD650DCF03DD8BE33C /* Pods-Mime History-dummy.m */; };
 		41D1AF8B92ABC14A2F4EE5A5398957FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7752798AED75D2190758A21548AB728 /* Foundation.framework */; };
 		4EE3A11A96A03056EA75B72D63BE1576 /* Wallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E8F3561E5D8BBF057CECAB19F421519 /* Wallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E9D74A1E317AA9D37E1FDB39C09938B /* Pods-Mime History WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 350A140DDDB73B180A3D3C70B5804097 /* Pods-Mime History WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60C8E61D7F233C05D4DC4795E8511E37 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EAF2480F9490238D41F62297400E0D /* CardView.swift */; };
 		65AEDF807671ABB5FCD02BC906553448 /* Wallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C077FA15B40B61B4A050A9EE69E32C /* Wallet-dummy.m */; };
 		6CCA5C41D3CA7EB46F0B40455E97B962 /* Pods-Mime History WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3292B8A8FA64A16A0EFFD0D9F84C57 /* Pods-Mime History WatchKit App-dummy.m */; };
 		7065B17BDD342D9DD459B62D451A3F47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AE61DEB7F70B8D5B09290911F0E1C8 /* Foundation.framework */; };
 		902D7E4A1A4C040A82CF154C154CDB21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AE61DEB7F70B8D5B09290911F0E1C8 /* Foundation.framework */; };
 		929CEF369933AA5C78437F3EE1812556 /* Pods-Mime History WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4F85AABB4F5D7BE6A7C791BBBB2E77 /* Pods-Mime History WatchKit Extension-dummy.m */; };
+		A0955FA71DF1E4030092D3BA /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD521DF1E293000D7849 /* WalletView.swift */; };
+		A0955FA81DF1E4070092D3BA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EAF2480F9490238D41F62297400E0D /* CardView.swift */; };
 		BBE1FE23A7CD61A5AABEC0C3F7D6835D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7752798AED75D2190758A21548AB728 /* Foundation.framework */; };
 		CDC9F1474EE981D27A75B94CDE46BB5D /* Pods-Mime History WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D6A630EECDF07C8E2B7054E53B63F7B /* Pods-Mime History WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -40,15 +40,15 @@
 		0DF0CDCEFDC64A84C3FF861EBA715904 /* Pods-Mime History WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Mime History WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
 		0EED1B93F23086D2A0096A8FA03ABF19 /* Pods-Mime History-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Mime History-resources.sh"; sourceTree = "<group>"; };
 		0EF83BBE271EB9AB9AA8140D0CC3FFBA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D6CF52C08CD297911DB29612CD4D461 /* Pods-Mime History WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Mime History WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		1D6CF52C08CD297911DB29612CD4D461 /* Pods-Mime History WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Mime History WatchKit Extension.modulemap"; sourceTree = "<group>"; };
 		1DE54B9192BCD630C1613E08C50DC3D5 /* Pods-Mime History.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mime History.release.xcconfig"; sourceTree = "<group>"; };
 		2BAEECAFE2C20F4E06455E66A8B1BACB /* Pods-Mime History WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Mime History WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
-		30C15030013F601B7B2F38CBB1D103C3 /* Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Wallet.framework; path = Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C15030013F601B7B2F38CBB1D103C3 /* Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		350A140DDDB73B180A3D3C70B5804097 /* Pods-Mime History WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Mime History WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
 		373CEA9BC5D1B307D39A855EC2E37130 /* Pods-Mime History WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mime History WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		3AA0B4C1235DE08A76657C6A9963557F /* Pods_Mime_History_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Mime_History_WatchKit_App.framework; path = "Pods-Mime History WatchKit App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA0B4C1235DE08A76657C6A9963557F /* Pods_Mime_History_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mime_History_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4287C8E02CAAAE1570E668CA62EFC4B6 /* Pods-Mime History WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Mime History WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
-		4C0B4D24CA0126A040CCAA781A5BCF27 /* Pods-Mime History WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Mime History WatchKit App.modulemap"; sourceTree = "<group>"; };
+		4C0B4D24CA0126A040CCAA781A5BCF27 /* Pods-Mime History WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Mime History WatchKit App.modulemap"; sourceTree = "<group>"; };
 		59C077FA15B40B61B4A050A9EE69E32C /* Wallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Wallet-dummy.m"; sourceTree = "<group>"; };
 		6332A35BD6D567C993D4300A791D69B6 /* Pods-Mime History WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Mime History WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
 		645C0267CEF7C606378D4C4B9FE2DD9A /* Wallet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Wallet-prefix.pch"; sourceTree = "<group>"; };
@@ -56,15 +56,15 @@
 		6E8F3561E5D8BBF057CECAB19F421519 /* Wallet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Wallet-umbrella.h"; sourceTree = "<group>"; };
 		6F93A0D0AAB22AC9BA423C45E8C8A353 /* Pods-Mime History WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mime History WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		756C7AF1A2B5B4B5363807E098D6EE0C /* Pods-Mime History WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Mime History WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		75868639CEF2EF75C9E1A409AF750228 /* Pods-Mime History.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Mime History.modulemap"; sourceTree = "<group>"; };
-		76CBDC1BEC7531143C16033A6F7CCAE9 /* Pods_Mime_History.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Mime_History.framework; path = "Pods-Mime History.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75868639CEF2EF75C9E1A409AF750228 /* Pods-Mime History.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Mime History.modulemap"; sourceTree = "<group>"; };
+		76CBDC1BEC7531143C16033A6F7CCAE9 /* Pods_Mime_History.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mime_History.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD807356ED940CD650DCF03DD8BE33C /* Pods-Mime History-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Mime History-dummy.m"; sourceTree = "<group>"; };
 		7D6A630EECDF07C8E2B7054E53B63F7B /* Pods-Mime History WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Mime History WatchKit App-umbrella.h"; sourceTree = "<group>"; };
 		7F5D671171F4E8EA9321F84D052C40E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		855D8446730E5283FBC0A496C803BD3C /* Pods-Mime History WatchKit Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Mime History WatchKit Extension-resources.sh"; sourceTree = "<group>"; };
-		859C2B40C5654DC65ABDBEE9FCD129B7 /* WalletView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WalletView.swift; path = Wallet/Classes/WalletView.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B3E40DD209820431D505D041A1413D00 /* Pods_Mime_History_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Mime_History_WatchKit_Extension.framework; path = "Pods-Mime History WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A08AFD521DF1E293000D7849 /* WalletView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WalletView.swift; path = Wallet/Classes/WalletView.swift; sourceTree = "<group>"; };
+		B3E40DD209820431D505D041A1413D00 /* Pods_Mime_History_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mime_History_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7752798AED75D2190758A21548AB728 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B8C2D3F3179CA9680847F4543740B8D8 /* Wallet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Wallet.xcconfig; sourceTree = "<group>"; };
 		B93EA94A87F87C0537DD2212A16CBFE5 /* Pods-Mime History-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Mime History-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		D1B5AD616E5CCCD88CB712B6979414A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA3292B8A8FA64A16A0EFFD0D9F84C57 /* Pods-Mime History WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Mime History WatchKit App-dummy.m"; sourceTree = "<group>"; };
 		E3AB4A68492DB1C200D315F0B1DDEEFD /* Pods-Mime History.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mime History.debug.xcconfig"; sourceTree = "<group>"; };
-		E53A40BD127D4F4A3978CF96BC098E5A /* Wallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Wallet.modulemap; sourceTree = "<group>"; };
+		E53A40BD127D4F4A3978CF96BC098E5A /* Wallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Wallet.modulemap; sourceTree = "<group>"; };
 		EAC7891415A99894F802B02430F47706 /* Pods-Mime History WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Mime History WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
 		F9AE61DEB7F70B8D5B09290911F0E1C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		FA4F85AABB4F5D7BE6A7C791BBBB2E77 /* Pods-Mime History WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Mime History WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
@@ -120,11 +120,10 @@
 		2B8DE70ACE987A279D1CC651F716F6AB /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				A08AFD521DF1E293000D7849 /* WalletView.swift */,
 				B9EAF2480F9490238D41F62297400E0D /* CardView.swift */,
-				859C2B40C5654DC65ABDBEE9FCD129B7 /* WalletView.swift */,
 				887CF3D5D29A49090F953FD0FED50BD9 /* Support Files */,
 			);
-			name = Wallet;
 			path = Wallet;
 			sourceTree = "<group>";
 		};
@@ -376,6 +375,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					1A5149547F7138BCC2285B7BDE73523C = {
+						LastSwiftMigration = 0810;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -402,9 +406,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60C8E61D7F233C05D4DC4795E8511E37 /* CardView.swift in Sources */,
+				A0955FA81DF1E4070092D3BA /* CardView.swift in Sources */,
+				A0955FA71DF1E4030092D3BA /* WalletView.swift in Sources */,
 				65AEDF807671ABB5FCD02BC906553448 /* Wallet-dummy.m in Sources */,
-				2BC4EDF5FB7F401F3CFCF33607CD5544 /* WalletView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +485,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E3AB4A68492DB1C200D315F0B1DDEEFD /* Pods-Mime History.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -507,6 +512,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -639,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1DE54B9192BCD630C1613E08C50DC3D5 /* Pods-Mime History.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -664,6 +671,7 @@
 				PRODUCT_NAME = Pods_Mime_History;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
