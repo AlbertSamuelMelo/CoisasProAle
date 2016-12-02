@@ -83,14 +83,6 @@ class ColoredCardView: CardView {
         contentView.addTransitionFade()
         
         //Testes Watch
-        //estaGanhado()
-        
-        
-        //verificando se e suportado
-        if WCSession.isSupported(){
-            session = WCSession.default()
-        }
-
         estaGanhado()
         
     }
@@ -120,6 +112,10 @@ class ColoredCardView: CardView {
         }
         timeBonds = cowdownView.bounds.width/CGFloat(timeBase!)
         playRegress()
+        //verificando se e suportado
+        if WCSession.isSupported(){
+            session = WCSession.default()
+        }
     }
     
     
@@ -150,6 +146,7 @@ class ColoredCardView: CardView {
             //Finish Cronometro regressivo
             timerCowdown.invalidate()
             self.pontua = false
+            estaGanhado()
             self.dismiss()
         }
     }
