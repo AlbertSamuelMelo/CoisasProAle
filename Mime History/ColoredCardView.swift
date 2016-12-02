@@ -78,6 +78,7 @@ class ColoredCardView: CardView {
     
     func qAcerta() {
         
+        // aqui essa linda funcao, pra nao falar outra coisa
         timerCowdown.invalidate()
         self.pontua = true
         self.dismiss()
