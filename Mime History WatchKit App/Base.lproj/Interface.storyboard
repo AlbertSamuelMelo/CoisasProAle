@@ -14,7 +14,17 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Mime_History_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" height="153" alignment="left" backgroundImage="acertou" id="FE7-Cm-soV"/>
+                        <group width="1" height="151" alignment="left" layout="vertical" id="zDF-Wo-gfm">
+                            <items>
+                                <label alignment="center" text="Marcar ponto" id="NRW-hH-Qi1"/>
+                                <button width="76" height="72" alignment="center" verticalAlignment="center" backgroundImage="acertou" id="R0e-tj-ik9">
+                                    <connections>
+                                        <action selector="Acerto" destination="AgC-eL-Hgc" id="gZ7-ld-EaV"/>
+                                    </connections>
+                                </button>
+                                <label alignment="center" verticalAlignment="bottom" text="Equipe" id="KrN-rk-goe"/>
+                            </items>
+                        </group>
                     </items>
                 </controller>
             </objects>

@@ -1,8 +1,21 @@
 
 import UIKit
 import Wallet
+import WatchConnectivity
 
 class ColoredCardView: CardView {
+    
+    //MARK: - Session Watch
+    
+    var session: WCSession?{
+        didSet{
+            if let session = session{
+                session.delegate = self
+                session.activate()
+            }
+        }
+    }
+    
     
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var acertouBt: UIButton!
@@ -40,7 +53,7 @@ class ColoredCardView: CardView {
 
         self.contentView.layer.masksToBounds = true
         
-        self.presentedDidUpdate()
+                self.presentedDidUpdate()
         
     }
     
@@ -69,6 +82,15 @@ class ColoredCardView: CardView {
         
         contentView.addTransitionFade()
         
+        //Testes Watch
+        //estaGanhado()
+        
+        
+        //verificando se e suportado
+        if WCSession.isSupported(){
+            session = WCSession.default()
+        }
+
     }
     
     @IBAction func acertou() {
@@ -128,6 +150,70 @@ class ColoredCardView: CardView {
             self.pontua = false
             self.dismiss()
         }
+    }
+    
+    //MARK: - Watch Methods
+    
+    var quantidadeDeTime = JogoViewController()
+    var grupos: [Grupo]? = []
+    
+    /*func estaGanhado() {
+        
+        var pontuacaoDoTime: [(Int, String)] = []
+        
+        for i in 0..<2 /*quantidadeDeTime.quantidadeDeTimes!*/ {
+            
+            let element1:(Int,String) = (
+            
+            pontuacaoDoTime.append(element1)
+            
+        }
+        
+        //Time com maior pontuaçao
+        pontuacaoDoTime.sort(by: >)
+        
+        let send = pontuacaoDoTime[0].1
+        
+        
+        session?.sendMessage(["comando":send], replyHandler: { (response: [String : Any]) in
+            if let response = response["Time"] as? String{
+                print("Time enviado watchOS")
+                print("Time ganhando \(response)")
+            }
+        }, errorHandler: { (Error) in
+            print("Não eviou o time vencedor")
+        })
+        
+        
+    }*/
+    
+    
+}
+
+
+extension ColoredCardView: WCSessionDelegate{
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        print("iOS: Session Ativado.")
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+    }
+    func sessionDidDeactivate(_ session: WCSession) {
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        
+        if message["comando"] as? String == "Acertou"{
+            
+            print("Chegou no Acerto")
+            
+            self.qAcerta()
+            
+            let response = ["Acerto":"Acerto computado iOS"]
+            replyHandler(response)
+        }
+        
     }
     
 }

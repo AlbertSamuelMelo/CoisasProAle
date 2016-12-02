@@ -212,6 +212,7 @@ extension JogoViewController: WCSessionDelegate{
             
             print("Chegou no Acerto")
             
+            
             print(self.marcaPonto())
             
             let response = ["Acerto":"Acerto computado iOS"]
