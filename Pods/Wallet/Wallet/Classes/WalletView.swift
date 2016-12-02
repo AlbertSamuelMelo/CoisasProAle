@@ -153,7 +153,8 @@ open class WalletView: UIView {
             self.presentedCardView = nil
         }
         
-        if newInsertedCardViews.count == 1 {
+        if newInsertedCardViews.count == 0 {
+            print("to certo")
             presentedCardView = newInsertedCardViews.first
         }
         
@@ -329,7 +330,7 @@ open class WalletView: UIView {
         
         self.insertedCardViews = cardViews
         
-        if insertedCardViews.count == 1 {
+        if insertedCardViews.count == 0 {
             presentedCardView = insertedCardViews.first
         }
         
@@ -387,7 +388,7 @@ open class WalletView: UIView {
             removalSuperview.clipsToBounds = true
             
             let overlay = UIView()
-            overlay.backgroundColor = .red
+            overlay.backgroundColor = .clear
             
             self?.addSubview(removalSuperview)
             removalSuperview.addSubview(overlay)
@@ -467,30 +468,30 @@ open class WalletView: UIView {
         
     }
     
-    func releaseGrabbedCardView() {
-        
-        defer {
-            grabbedCardView = nil
-        }
-        
-        if let grabbedCardView = grabbedCardView,
-            grabbedCardView == presentedCardView && grabbedCardView.presented == true,
-            grabbedCardView.frame.origin.y > grabbedCardViewOriginalY + maximumCardViewHeight / 4 {
-            
-            let presentationCenter = convert(self.presentationCenter, from: scrollView)
-            let yPoints = frame.maxY - (presentationCenter.y - maximumCardViewHeight / 2)
-            let velocityY = grabbedCardView.panGestureRecognizer.velocity(in: grabbedCardView).y
-            let animationDuration = min(WalletView.dismissingAnimationSpeed * 1.5, TimeInterval(yPoints / velocityY))
-            dismissPresentedCardView(animated: true, animationDuration: animationDuration)
-        } else if let grabbedCardView = grabbedCardView,
-            presentedCardView == nil && grabbedCardView.presented == false,
-            grabbedCardView.frame.origin.y < grabbedCardViewOriginalY - maximumCardViewHeight / 4 {
-            present(cardView: grabbedCardView, animated: true)
-        } else {
-            layoutWalletView(animationDuration: WalletView.grabbingAnimationSpeed)
-        }
-        
-    }
+//    func releaseGrabbedCardView() {
+//        
+//        defer {
+//            grabbedCardView = nil
+//        }
+//        
+//        if let grabbedCardView = grabbedCardView,
+//            grabbedCardView == presentedCardView && grabbedCardView.presented == true,
+//            grabbedCardView.frame.origin.y > grabbedCardViewOriginalY + maximumCardViewHeight / 4 {
+//            
+//            let presentationCenter = convert(self.presentationCenter, from: scrollView)
+//            let yPoints = frame.maxY - (presentationCenter.y - maximumCardViewHeight / 2)
+//            let velocityY = grabbedCardView.panGestureRecognizer.velocity(in: grabbedCardView).y
+//            let animationDuration = min(WalletView.dismissingAnimationSpeed * 1.5, TimeInterval(yPoints / velocityY))
+//            dismissPresentedCardView(animated: true, animationDuration: animationDuration)
+//        } else if let grabbedCardView = grabbedCardView,
+//            presentedCardView == nil && grabbedCardView.presented == false,
+//            grabbedCardView.frame.origin.y < grabbedCardViewOriginalY - maximumCardViewHeight / 4 {
+//            present(cardView: grabbedCardView, animated: true)
+//        } else {
+//            layoutWalletView(animationDuration: WalletView.grabbingAnimationSpeed)
+//        }
+//        
+//    }
     
     
     

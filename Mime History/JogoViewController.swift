@@ -77,6 +77,7 @@ class JogoViewController: UIViewController, UICollectionViewDataSource, UICollec
             if let timeBase = timeBase{
                 
                 cardView.timeBase = TimeInterval(timeBase*60)
+                cardView.image.image = card.Ilustracao
                 cardView.titulo.text = card.Titulo
                 cardView.descricao.text = card.Descricao
                 cardView.subtitulo.text = card.Era

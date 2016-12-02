@@ -120,6 +120,7 @@
 		A08AFD441DF10E78000D7849 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A08AFD451DF10E78000D7849 /* Grupo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grupo.swift; sourceTree = "<group>"; };
 		A08AFD461DF10E78000D7849 /* GrupoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrupoStore.swift; sourceTree = "<group>"; };
+		A0955FA31DF1E38F0092D3BA /* Wallet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Wallet.framework; path = "../../../Library/Developer/Xcode/DerivedData/Mime_History-dqfuhytuhauwesbhvbtadtvnrvra/Build/Products/Debug-iphonesimulator/Wallet/Wallet.framework"; sourceTree = "<group>"; };
 		BED93B3A26B0DE7268398E0C /* Pods_Mime_History.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mime_History.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFA0991F6C57FCC6704DDB0 /* Pods-Mime History WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mime History WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mime History WatchKit App/Pods-Mime History WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		C1C15859D87C03610C2DC1F3 /* Pods-Mime History WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mime History WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mime History WatchKit Extension/Pods-Mime History WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
@@ -276,6 +277,7 @@
 		C46AD3BC0F10B61F9160FDA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0955FA31DF1E38F0092D3BA /* Wallet.framework */,
 				BED93B3A26B0DE7268398E0C /* Pods_Mime_History.framework */,
 				F9FBBF37623905EB2C0556B4 /* Pods_Mime_History_WatchKit_App.framework */,
 				3F18D3487BAD62F3C906A297 /* Pods_Mime_History_WatchKit_Extension.framework */,
