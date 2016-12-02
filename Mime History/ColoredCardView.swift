@@ -88,7 +88,6 @@ class ColoredCardView: CardView {
         
         UIView.animate(withDuration: 0.75, animations: {
         
-            sender.transform = CGAffineTransform(scaleX: 2, y: 2)
             self.descricaoView.transform = CGAffineTransform(translationX: 0, y: (self.walletView?.frame.height)!)
         }) { (finished) in
             

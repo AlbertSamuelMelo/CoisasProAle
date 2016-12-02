@@ -37,6 +37,8 @@
 		A08AFD481DF10E78000D7849 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD441DF10E78000D7849 /* Card.swift */; };
 		A08AFD491DF10E78000D7849 /* Grupo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD451DF10E78000D7849 /* Grupo.swift */; };
 		A08AFD4A1DF10E78000D7849 /* GrupoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD461DF10E78000D7849 /* GrupoStore.swift */; };
+		A0955FAA1DF2099F0092D3BA /* Periodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0955FA91DF2099F0092D3BA /* Periodo.swift */; };
+		A0955FAC1DF209B70092D3BA /* PeriodoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0955FAB1DF209B70092D3BA /* PeriodoStore.swift */; };
 		DD1FD66CF1609B80374700F8 /* Pods_Mime_History_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FBBF37623905EB2C0556B4 /* Pods_Mime_History_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +123,8 @@
 		A08AFD451DF10E78000D7849 /* Grupo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grupo.swift; sourceTree = "<group>"; };
 		A08AFD461DF10E78000D7849 /* GrupoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrupoStore.swift; sourceTree = "<group>"; };
 		A0955FA31DF1E38F0092D3BA /* Wallet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Wallet.framework; path = "../../../Library/Developer/Xcode/DerivedData/Mime_History-dqfuhytuhauwesbhvbtadtvnrvra/Build/Products/Debug-iphonesimulator/Wallet/Wallet.framework"; sourceTree = "<group>"; };
+		A0955FA91DF2099F0092D3BA /* Periodo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Periodo.swift; sourceTree = "<group>"; };
+		A0955FAB1DF209B70092D3BA /* PeriodoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodoStore.swift; sourceTree = "<group>"; };
 		BED93B3A26B0DE7268398E0C /* Pods_Mime_History.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mime_History.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFA0991F6C57FCC6704DDB0 /* Pods-Mime History WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mime History WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mime History WatchKit App/Pods-Mime History WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		C1C15859D87C03610C2DC1F3 /* Pods-Mime History WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mime History WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mime History WatchKit Extension/Pods-Mime History WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
@@ -239,10 +243,12 @@
 		A08AFD2D1DF10E24000D7849 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A08AFD431DF10E78000D7849 /* CardStore.swift */,
-				A08AFD441DF10E78000D7849 /* Card.swift */,
 				A08AFD451DF10E78000D7849 /* Grupo.swift */,
 				A08AFD461DF10E78000D7849 /* GrupoStore.swift */,
+				A08AFD441DF10E78000D7849 /* Card.swift */,
+				A08AFD431DF10E78000D7849 /* CardStore.swift */,
+				A0955FA91DF2099F0092D3BA /* Periodo.swift */,
+				A0955FAB1DF209B70092D3BA /* PeriodoStore.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -564,8 +570,10 @@
 				A08AFD421DF10E6D000D7849 /* PlacarCollectionViewCell.swift in Sources */,
 				A08AFD2B1DF10E12000D7849 /* UIViewExtension.swift in Sources */,
 				A08AFD3C1DF10E51000D7849 /* PlacarViewController.swift in Sources */,
+				A0955FAC1DF209B70092D3BA /* PeriodoStore.swift in Sources */,
 				A08AFD371DF10E51000D7849 /* LojaViewController.swift in Sources */,
 				A08AFD491DF10E78000D7849 /* Grupo.swift in Sources */,
+				A0955FAA1DF2099F0092D3BA /* Periodo.swift in Sources */,
 				A08AFD4A1DF10E78000D7849 /* GrupoStore.swift in Sources */,
 				A08AFCEA1DF10C02000D7849 /* AppDelegate.swift in Sources */,
 				A08AFD471DF10E78000D7849 /* CardStore.swift in Sources */,

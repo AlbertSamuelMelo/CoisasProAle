@@ -31,7 +31,7 @@ class CardStore {
             ( 001,
               "Rômulo & Rêmulo",
               "",
-              "Segundo a mitologia romana, os gêmeos foram jogados no rio Tibre, na Itália. Resgatados por uma loba, que os amamentou, foram criados posteriormente por um casal de pastores. Adultos, retornam a cidade natal de Alba Longa e ganham terras para fundar uma nova cidade que seria Roma",
+              "Na mitologia romana, os gêmeos foram jogados no rio Tibre, resgatados por uma loba, que os amamentou e posteriormente criados por um casal de pastores. Adultos, fundam a cidade Roma",
               "A Origem de Roma",
               #imageLiteral(resourceName: "romulo"),
               0
@@ -39,7 +39,7 @@ class CardStore {
             ( 002,
               "Centurião",
               "",
-              "A sociedade, nesta época, era formada por patrícios, plebeus. O sistema político era a monarquia, onde o rei era escolhido pelos patrícios",
+              "O centurião era o soldado responsável por comandar a centúria, suas ordens eram prontamente obedecida pelos soldados. Os centuriões marchavam junto a sua centúria",
               "Comandante da Legião",
               #imageLiteral(resourceName: "centuriao"),
               0
@@ -47,7 +47,7 @@ class CardStore {
             ( 003,
               "Salário",
               "",
-              "Após um grande choque entre o poder monárquico e a aristocracia patrícia, a qual se revoltou contra as vantagens que a monarquia vinha concedendo aos plebeus a fim de fortalecer seu poder e neutralizar o poder dos patrícios. Culminou na disposição do ultimo rei etrusco e o fim da monarquia. O poder executivo passou a ter uma nova organização administrativa",
+              "Do latim, salarium, era uma porção de sal dada aos soldados romanos como pagamento pelos serviços prestados. Era uma iguaria rara e de fácil troca por comidas, roupas, armas, etc.  ",
               "Pagamento com Sal",
               #imageLiteral(resourceName: "salario"),
               0
@@ -55,7 +55,7 @@ class CardStore {
             ( 004,
               "Tartaruga",
               "",
-              "Após a conquista da Grecia, Egito, Macedônia, Gália, Germâni, Trácia, Síria e Palestina, a estrutura de Roma passou por significativas mudanças. O império romano passou a ser muito mais comercial do que agrário. Povos conquistados foram escravizados ou passaram a pagar impostos para o império. As províncias renderam grandes recursos para Roma. A capital do Império Romano enriqueceu e a vida dos romanos mudou.",
+              "Uma formação de combate defensivo contra arquearia, permitindo avançar sob linhas inimigas sem abalo do ataque à distância. ",
               "Tática de Combate",
               #imageLiteral(resourceName: "tartaruga"),
               0
@@ -63,7 +63,7 @@ class CardStore {
             (005,
              "Vênus",
              "",
-             "Com o grande crescimento urbano, surgiram vários problemas sociais. A escravidão gerou desemprego na zona rural. Com a perda de seus empregos muitos camponeses migraram para as cidades em busca de boas condições de vida. Para evitar possíveis revoltas o imperador criou a política do pão e circo, onde se oferecia alimentação e diversão para o povo.",
+             "Deusa do Amor e da Beleza. Os romanos se consideravam descendentes da deusa, por conta de seu filho Éneas, fundador mítico da raça romana e pai de Rômulo e Rêmulo.",
              "Deusa do Amor e Beleza",
              #imageLiteral(resourceName: "venus"),
              0
@@ -71,15 +71,15 @@ class CardStore {
             (006,
              "Vinho",
              "",
-             "O Coliseu de Roma foi construído sobre o lago da casa de Nero, a tão famosa Domus Áurea ficou conhecido como Colosseo (Coliseu) pois ali foi achada a estátua gigante (colosso) do imperador. No coliseu gladiadores lutavam e cristãos eram lançados aos leões.",
+             "Bebida alcoólica sempre esteve presente na cultura romana, acessível a todos. Era usado como forma de impor a cultura romana nas regiões conquistadas, que passavam a produzi-lo.",
              "Bebida Alcoólica de Uva",
              #imageLiteral(resourceName: "vinho"),
              0
             ),
             (007,
-             "Cônsules",
+             "Senador",
              "",
-             "Durante a Republica, os dois Cônsules eram responsáveis pelo poder executivo, alem de serem os comandantes do exercito",
+             "Durante a Republica, os 300 Senadores, eleitos pelos Cônsules,  eram responsáveis pela elaboração de leis e decisões políticas. Seus membros eram em geral patrícios com cargos vitalícios",
              "Político Romano",
              #imageLiteral(resourceName: "senador"),
              0
@@ -87,7 +87,7 @@ class CardStore {
             (008,
              "Netuno",
              "",
-             "Apos o grande avanço das forças militares romanas o Império entrou em choque com Cartago e Macedônia, potências que nessa época dominavam o Mediterrâneo. As rivalidades entre os cartagineses e os romanos resultaram nas Guerras Púnicas, que recebeu esse nome como referencia a “puni” nome pelo qual os habitantes de Cartago eram conhecidos.",
+             "Deus dos Mares, Rios e Fontes. Filho do deus Saturno. Netuno tem o mar como sua morada, podendo criar terríveis tempestades ou ondas tranquilas, dependendo do seu humor",
              "Deus do Mar",
              #imageLiteral(resourceName: "netuno"),
              0
@@ -95,7 +95,7 @@ class CardStore {
             (009,
              "Júlio César",
              "",
-             "Caio Júlio César (nome real de Gaius Julius Caesar) foi um militar e governante romano. Foi o responsável pela conquista da Gália. Teve um papel de suma importância para a passagem da República para o Império Romano. Foi assassinado, após uma conspiração do Senado Romano",
+             "Caio Júlio César foi um militar e governante romano responsável pela conquista da Gália. Figura importante para o Império Romano. Foi assassinado, após uma conspiração do Senado Romano",
              "Imperador de Roma",
              #imageLiteral(resourceName: "julioCezar"),
              0
@@ -103,7 +103,7 @@ class CardStore {
             (010,
              "Gladiador",
              "",
-             "Os gladiadores eram lutadores que participavam de torneios de luta no Coliseu. Estes eram escravos, treinados para combate. Por muitos séculos, os Gladiadores lutaram entre si ou contra animais ferozes para entreter os romanos",
+             "Os gladiadores eram lutadores de torneios no Coliseu. Eram escravos, treinados para combate. Por décadas, os Gladiadores lutaram entre si ou contra animais ferozes para entreter os romanos",
              "Guerreiro Escravo",
              #imageLiteral(resourceName: "gladiador"),
              0
