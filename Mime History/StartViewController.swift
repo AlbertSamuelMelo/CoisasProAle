@@ -1,14 +1,14 @@
 //
 //  ViewController.swift
-//  Mime History
+//  Mimica
 //
-//  Created by Anderson Oliveira on 01/12/16.
+//  Created by Anderson Oliveira on 17/11/16.
 //  Copyright © 2016 Anderson Oliveira. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

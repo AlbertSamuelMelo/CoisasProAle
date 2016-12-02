@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B62D5B3773B9E8EA4DF053E /* Pods_Mime_History_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F18D3487BAD62F3C906A297 /* Pods_Mime_History_WatchKit_Extension.framework */; };
+		6AC846FA89BBD5AB01A46809 /* Pods_Mime_History.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED93B3A26B0DE7268398E0C /* Pods_Mime_History.framework */; };
 		A08AFCEA1DF10C02000D7849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFCE91DF10C02000D7849 /* AppDelegate.swift */; };
-		A08AFCEC1DF10C02000D7849 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFCEB1DF10C02000D7849 /* ViewController.swift */; };
-		A08AFCEF1DF10C02000D7849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08AFCED1DF10C02000D7849 /* Main.storyboard */; };
-		A08AFCF11DF10C02000D7849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08AFCF01DF10C02000D7849 /* Assets.xcassets */; };
 		A08AFCF41DF10C02000D7849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08AFCF21DF10C02000D7849 /* LaunchScreen.storyboard */; };
 		A08AFCF91DF10C03000D7849 /* Mime History WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A08AFCF81DF10C03000D7849 /* Mime History WatchKit App.app */; };
 		A08AFCFF1DF10C03000D7849 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08AFCFD1DF10C03000D7849 /* Interface.storyboard */; };
@@ -21,6 +20,24 @@
 		A08AFD131DF10C03000D7849 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD121DF10C03000D7849 /* NotificationController.swift */; };
 		A08AFD151DF10C03000D7849 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD141DF10C03000D7849 /* ComplicationController.swift */; };
 		A08AFD171DF10C03000D7849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08AFD161DF10C03000D7849 /* Assets.xcassets */; };
+		A08AFD271DF10DE4000D7849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08AFD261DF10DE4000D7849 /* Main.storyboard */; };
+		A08AFD2B1DF10E12000D7849 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD291DF10E12000D7849 /* UIViewExtension.swift */; };
+		A08AFD2C1DF10E12000D7849 /* MBSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD2A1DF10E12000D7849 /* MBSliderDelegate.swift */; };
+		A08AFD361DF10E51000D7849 /* ColoredCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD2F1DF10E51000D7849 /* ColoredCardView.swift */; };
+		A08AFD371DF10E51000D7849 /* LojaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD301DF10E51000D7849 /* LojaViewController.swift */; };
+		A08AFD381DF10E51000D7849 /* AssuntosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD311DF10E51000D7849 /* AssuntosViewController.swift */; };
+		A08AFD391DF10E51000D7849 /* InfosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD321DF10E51000D7849 /* InfosViewController.swift */; };
+		A08AFD3A1DF10E51000D7849 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD331DF10E51000D7849 /* StartViewController.swift */; };
+		A08AFD3B1DF10E51000D7849 /* JogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD341DF10E51000D7849 /* JogoViewController.swift */; };
+		A08AFD3C1DF10E51000D7849 /* PlacarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD351DF10E51000D7849 /* PlacarViewController.swift */; };
+		A08AFD3E1DF10E5F000D7849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08AFD3D1DF10E5F000D7849 /* Assets.xcassets */; };
+		A08AFD411DF10E6D000D7849 /* ColoredCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08AFD3F1DF10E6D000D7849 /* ColoredCardView.xib */; };
+		A08AFD421DF10E6D000D7849 /* PlacarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD401DF10E6D000D7849 /* PlacarCollectionViewCell.swift */; };
+		A08AFD471DF10E78000D7849 /* CardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD431DF10E78000D7849 /* CardStore.swift */; };
+		A08AFD481DF10E78000D7849 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD441DF10E78000D7849 /* Card.swift */; };
+		A08AFD491DF10E78000D7849 /* Grupo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD451DF10E78000D7849 /* Grupo.swift */; };
+		A08AFD4A1DF10E78000D7849 /* GrupoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD461DF10E78000D7849 /* GrupoStore.swift */; };
+		DD1FD66CF1609B80374700F8 /* Pods_Mime_History_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FBBF37623905EB2C0556B4 /* Pods_Mime_History_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,11 +83,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F61913A14310BEADD698E4F /* Pods-Mime History.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mime History.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mime History/Pods-Mime History.release.xcconfig"; sourceTree = "<group>"; };
+		234BA28F731EBBC5B7A82BED /* Pods-Mime History WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mime History WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mime History WatchKit App/Pods-Mime History WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		3BCF88F5CEE4A7DB26BDF6DB /* Pods-Mime History WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mime History WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mime History WatchKit Extension/Pods-Mime History WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		3F18D3487BAD62F3C906A297 /* Pods_Mime_History_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mime_History_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08AFCE61DF10C02000D7849 /* Mime History.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mime History.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08AFCE91DF10C02000D7849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A08AFCEB1DF10C02000D7849 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A08AFCEE1DF10C02000D7849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A08AFCF01DF10C02000D7849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A08AFCF31DF10C02000D7849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A08AFCF51DF10C02000D7849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08AFCF81DF10C03000D7849 /* Mime History WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mime History WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,13 +103,44 @@
 		A08AFD141DF10C03000D7849 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		A08AFD161DF10C03000D7849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A08AFD181DF10C03000D7849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A08AFD261DF10DE4000D7849 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A08AFD291DF10E12000D7849 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A08AFD2A1DF10E12000D7849 /* MBSliderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBSliderDelegate.swift; sourceTree = "<group>"; };
+		A08AFD2F1DF10E51000D7849 /* ColoredCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoredCardView.swift; sourceTree = "<group>"; };
+		A08AFD301DF10E51000D7849 /* LojaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LojaViewController.swift; sourceTree = "<group>"; };
+		A08AFD311DF10E51000D7849 /* AssuntosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssuntosViewController.swift; sourceTree = "<group>"; };
+		A08AFD321DF10E51000D7849 /* InfosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfosViewController.swift; sourceTree = "<group>"; };
+		A08AFD331DF10E51000D7849 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		A08AFD341DF10E51000D7849 /* JogoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JogoViewController.swift; sourceTree = "<group>"; };
+		A08AFD351DF10E51000D7849 /* PlacarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacarViewController.swift; sourceTree = "<group>"; };
+		A08AFD3D1DF10E5F000D7849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A08AFD3F1DF10E6D000D7849 /* ColoredCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColoredCardView.xib; sourceTree = "<group>"; };
+		A08AFD401DF10E6D000D7849 /* PlacarCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacarCollectionViewCell.swift; sourceTree = "<group>"; };
+		A08AFD431DF10E78000D7849 /* CardStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStore.swift; sourceTree = "<group>"; };
+		A08AFD441DF10E78000D7849 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A08AFD451DF10E78000D7849 /* Grupo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grupo.swift; sourceTree = "<group>"; };
+		A08AFD461DF10E78000D7849 /* GrupoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrupoStore.swift; sourceTree = "<group>"; };
+		BED93B3A26B0DE7268398E0C /* Pods_Mime_History.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mime_History.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFFA0991F6C57FCC6704DDB0 /* Pods-Mime History WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mime History WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mime History WatchKit App/Pods-Mime History WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		C1C15859D87C03610C2DC1F3 /* Pods-Mime History WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mime History WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mime History WatchKit Extension/Pods-Mime History WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		CD47DBF6B8C4DEE786C24585 /* Pods-Mime History.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mime History.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mime History/Pods-Mime History.debug.xcconfig"; sourceTree = "<group>"; };
+		F9FBBF37623905EB2C0556B4 /* Pods_Mime_History_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mime_History_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3345DA85A4DF3A6C2E47F6C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1FD66CF1609B80374700F8 /* Pods_Mime_History_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A08AFCE31DF10C02000D7849 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC846FA89BBD5AB01A46809 /* Pods_Mime_History.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B62D5B3773B9E8EA4DF053E /* Pods_Mime_History_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +162,8 @@
 				A08AFCFC1DF10C03000D7849 /* Mime History WatchKit App */,
 				A08AFD0B1DF10C03000D7849 /* Mime History WatchKit Extension */,
 				A08AFCE71DF10C02000D7849 /* Products */,
+				B1A4110A647483628963515B /* Pods */,
+				C46AD3BC0F10B61F9160FDA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,10 +181,13 @@
 			isa = PBXGroup;
 			children = (
 				A08AFCE91DF10C02000D7849 /* AppDelegate.swift */,
-				A08AFCEB1DF10C02000D7849 /* ViewController.swift */,
-				A08AFCED1DF10C02000D7849 /* Main.storyboard */,
-				A08AFCF01DF10C02000D7849 /* Assets.xcassets */,
+				A08AFD291DF10E12000D7849 /* UIViewExtension.swift */,
+				A08AFD2A1DF10E12000D7849 /* MBSliderDelegate.swift */,
+				A08AFD2E1DF10E33000D7849 /* Controller */,
+				A08AFD2D1DF10E24000D7849 /* Model */,
+				A08AFD281DF10DF9000D7849 /* View */,
 				A08AFCF21DF10C02000D7849 /* LaunchScreen.storyboard */,
+				A08AFD3D1DF10E5F000D7849 /* Assets.xcassets */,
 				A08AFCF51DF10C02000D7849 /* Info.plist */,
 			);
 			path = "Mime History";
@@ -170,6 +225,64 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A08AFD281DF10DF9000D7849 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A08AFD3F1DF10E6D000D7849 /* ColoredCardView.xib */,
+				A08AFD401DF10E6D000D7849 /* PlacarCollectionViewCell.swift */,
+				A08AFD261DF10DE4000D7849 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A08AFD2D1DF10E24000D7849 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A08AFD431DF10E78000D7849 /* CardStore.swift */,
+				A08AFD441DF10E78000D7849 /* Card.swift */,
+				A08AFD451DF10E78000D7849 /* Grupo.swift */,
+				A08AFD461DF10E78000D7849 /* GrupoStore.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A08AFD2E1DF10E33000D7849 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A08AFD2F1DF10E51000D7849 /* ColoredCardView.swift */,
+				A08AFD301DF10E51000D7849 /* LojaViewController.swift */,
+				A08AFD311DF10E51000D7849 /* AssuntosViewController.swift */,
+				A08AFD321DF10E51000D7849 /* InfosViewController.swift */,
+				A08AFD331DF10E51000D7849 /* StartViewController.swift */,
+				A08AFD341DF10E51000D7849 /* JogoViewController.swift */,
+				A08AFD351DF10E51000D7849 /* PlacarViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B1A4110A647483628963515B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD47DBF6B8C4DEE786C24585 /* Pods-Mime History.debug.xcconfig */,
+				0F61913A14310BEADD698E4F /* Pods-Mime History.release.xcconfig */,
+				BFFA0991F6C57FCC6704DDB0 /* Pods-Mime History WatchKit App.debug.xcconfig */,
+				234BA28F731EBBC5B7A82BED /* Pods-Mime History WatchKit App.release.xcconfig */,
+				C1C15859D87C03610C2DC1F3 /* Pods-Mime History WatchKit Extension.debug.xcconfig */,
+				3BCF88F5CEE4A7DB26BDF6DB /* Pods-Mime History WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C46AD3BC0F10B61F9160FDA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BED93B3A26B0DE7268398E0C /* Pods_Mime_History.framework */,
+				F9FBBF37623905EB2C0556B4 /* Pods_Mime_History_WatchKit_App.framework */,
+				3F18D3487BAD62F3C906A297 /* Pods_Mime_History_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,10 +290,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A08AFD231DF10C03000D7849 /* Build configuration list for PBXNativeTarget "Mime History" */;
 			buildPhases = (
+				135EBC7BBDFA472FAB74E712 /* [CP] Check Pods Manifest.lock */,
 				A08AFCE21DF10C02000D7849 /* Sources */,
 				A08AFCE31DF10C02000D7849 /* Frameworks */,
 				A08AFCE41DF10C02000D7849 /* Resources */,
 				A08AFD221DF10C03000D7849 /* Embed Watch Content */,
+				CF10D3E70EB7FA65AFBF5E01 /* [CP] Embed Pods Frameworks */,
+				D535E0A27807735DB1EABBE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,8 +312,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A08AFD1F1DF10C03000D7849 /* Build configuration list for PBXNativeTarget "Mime History WatchKit App" */;
 			buildPhases = (
+				538065242920CE2983CA9DB5 /* [CP] Check Pods Manifest.lock */,
 				A08AFCF61DF10C03000D7849 /* Resources */,
 				A08AFD1E1DF10C03000D7849 /* Embed App Extensions */,
+				3345DA85A4DF3A6C2E47F6C4 /* Frameworks */,
+				61DEF95131967F5DA5C93F6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,9 +332,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A08AFD1B1DF10C03000D7849 /* Build configuration list for PBXNativeTarget "Mime History WatchKit Extension" */;
 			buildPhases = (
+				0FCB45093F2269813E4E82DD /* [CP] Check Pods Manifest.lock */,
 				A08AFD031DF10C03000D7849 /* Sources */,
 				A08AFD041DF10C03000D7849 /* Frameworks */,
 				A08AFD051DF10C03000D7849 /* Resources */,
+				FE84E36BE71A09CDD50EB3BD /* [CP] Embed Pods Frameworks */,
+				B1B453137237B305FE97C0DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,9 +400,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08AFD271DF10DE4000D7849 /* Main.storyboard in Resources */,
+				A08AFD411DF10E6D000D7849 /* ColoredCardView.xib in Resources */,
+				A08AFD3E1DF10E5F000D7849 /* Assets.xcassets in Resources */,
 				A08AFCF41DF10C02000D7849 /* LaunchScreen.storyboard in Resources */,
-				A08AFCF11DF10C02000D7849 /* Assets.xcassets in Resources */,
-				A08AFCEF1DF10C02000D7849 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,13 +426,149 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FCB45093F2269813E4E82DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		135EBC7BBDFA472FAB74E712 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		538065242920CE2983CA9DB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		61DEF95131967F5DA5C93F6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mime History WatchKit App/Pods-Mime History WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1B453137237B305FE97C0DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mime History WatchKit Extension/Pods-Mime History WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF10D3E70EB7FA65AFBF5E01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mime History/Pods-Mime History-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D535E0A27807735DB1EABBE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mime History/Pods-Mime History-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE84E36BE71A09CDD50EB3BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mime History WatchKit Extension/Pods-Mime History WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A08AFCE21DF10C02000D7849 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A08AFCEC1DF10C02000D7849 /* ViewController.swift in Sources */,
+				A08AFD2C1DF10E12000D7849 /* MBSliderDelegate.swift in Sources */,
+				A08AFD3A1DF10E51000D7849 /* StartViewController.swift in Sources */,
+				A08AFD361DF10E51000D7849 /* ColoredCardView.swift in Sources */,
+				A08AFD381DF10E51000D7849 /* AssuntosViewController.swift in Sources */,
+				A08AFD481DF10E78000D7849 /* Card.swift in Sources */,
+				A08AFD421DF10E6D000D7849 /* PlacarCollectionViewCell.swift in Sources */,
+				A08AFD2B1DF10E12000D7849 /* UIViewExtension.swift in Sources */,
+				A08AFD3C1DF10E51000D7849 /* PlacarViewController.swift in Sources */,
+				A08AFD371DF10E51000D7849 /* LojaViewController.swift in Sources */,
+				A08AFD491DF10E78000D7849 /* Grupo.swift in Sources */,
+				A08AFD4A1DF10E78000D7849 /* GrupoStore.swift in Sources */,
 				A08AFCEA1DF10C02000D7849 /* AppDelegate.swift in Sources */,
+				A08AFD471DF10E78000D7849 /* CardStore.swift in Sources */,
+				A08AFD391DF10E51000D7849 /* InfosViewController.swift in Sources */,
+				A08AFD3B1DF10E51000D7849 /* JogoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,14 +599,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A08AFCED1DF10C02000D7849 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A08AFCEE1DF10C02000D7849 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A08AFCF21DF10C02000D7849 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -460,6 +711,7 @@
 		};
 		A08AFD1C1DF10C03000D7849 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C15859D87C03610C2DC1F3 /* Pods-Mime History WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = 2577FS5BXM;
@@ -477,6 +729,7 @@
 		};
 		A08AFD1D1DF10C03000D7849 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BCF88F5CEE4A7DB26BDF6DB /* Pods-Mime History WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = 2577FS5BXM;
@@ -494,6 +747,7 @@
 		};
 		A08AFD201DF10C03000D7849 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFFA0991F6C57FCC6704DDB0 /* Pods-Mime History WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -512,6 +766,7 @@
 		};
 		A08AFD211DF10C03000D7849 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 234BA28F731EBBC5B7A82BED /* Pods-Mime History WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -530,6 +785,7 @@
 		};
 		A08AFD241DF10C03000D7849 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD47DBF6B8C4DEE786C24585 /* Pods-Mime History.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2577FS5BXM;
@@ -543,6 +799,7 @@
 		};
 		A08AFD251DF10C03000D7849 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F61913A14310BEADD698E4F /* Pods-Mime History.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2577FS5BXM;
@@ -573,6 +830,7 @@
 				A08AFD1D1DF10C03000D7849 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A08AFD1F1DF10C03000D7849 /* Build configuration list for PBXNativeTarget "Mime History WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +839,7 @@
 				A08AFD211DF10C03000D7849 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A08AFD231DF10C03000D7849 /* Build configuration list for PBXNativeTarget "Mime History" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +848,7 @@
 				A08AFD251DF10C03000D7849 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
