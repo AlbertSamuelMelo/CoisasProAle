@@ -73,6 +73,11 @@ class ColoredCardView: CardView {
     
     @IBAction func acertou() {
         
+        self.qAcerta()
+    }
+    
+    func qAcerta() {
+        
         timerCowdown.invalidate()
         self.pontua = true
         self.dismiss()
