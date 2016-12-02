@@ -54,11 +54,13 @@ class JogoViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.grupos = GrupoStore.singleton.pegarGrupo(self.quantidadeDeTimes!-1)
         
         if WCSession.isSupported(){
             session = WCSession.default()
         }
+        
+        self.grupos = GrupoStore.singleton.pegarGrupo(self.quantidadeDeTimes!-1)
+        
         
         self.viewPlacar.backgroundColor = UIColor(patternImage: UIImage(named: "bg")!)
         self.viewPlacar.layer.shadowOpacity = 0.5
@@ -92,6 +94,13 @@ class JogoViewController: UIViewController, UICollectionViewDataSource, UICollec
         NotificationCenter.default.addObserver(self, selector: #selector(JogoViewController.showPlacar(_:)), name: NSNotification.Name(rawValue: "showPlacar"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(JogoViewController.dismissPlacar(_:)), name: NSNotification.Name(rawValue: "dismissPlacar"), object: nil)
 
+        enviarTimeDaVez()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+            
     }
     
     func showPlacar(_ notification: Notification) {
@@ -153,21 +162,7 @@ class JogoViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         return cell
     }
-    
-    //MARK: - Pontua em caso de acerto
-    
-    func marcaPonto ()-> Bool {
-        //Falta implementar
-        print("MARCOU")
-        
-        let alertController = UIAlertController(title: "Deu certo", message:
-            "Sucesso absoluto e pleno", preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: "Felicidades", style: UIAlertActionStyle.default,handler: nil))
-        
-        self.present(alertController, animated: true, completion: nil)
-        
-        return true
-    }
+
     
     func pontua() {
         
@@ -189,9 +184,22 @@ class JogoViewController: UIViewController, UICollectionViewDataSource, UICollec
             self.imagemTurnoAtual.image = self.grupos![self.timeAtual].avatar
         }
         
+        
+        //Mandar sempre o time do turno da vez
+        enviarTimeDaVez()
+        
+        
     }
     
-    
+    func enviarTimeDaVez(){
+        session?.sendMessage(["Vez":timeAtual], replyHandler: { (response: [String : Any]) in
+            if let timeDaVez = response["Vez"] as? String{
+                print("Vez do time \(timeDaVez)")
+            }
+        }, errorHandler: { (Error) in
+            print("Não consegui enviar o time")
+        })
+    }
     
 }
 
@@ -211,10 +219,7 @@ extension JogoViewController: WCSessionDelegate{
         if message["comando"] as? String == "Acertou"{
             
             print("Chegou no Acerto")
-            
-            
-            print(self.marcaPonto())
-            
+
             let response = ["Acerto":"Acerto computado iOS"]
             replyHandler(response)
         }

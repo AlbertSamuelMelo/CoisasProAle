@@ -38,25 +38,15 @@ open class CardView: UIView {
     /** This method is called when the card view is tapped. */
     open func tapped() {
         if let _ = walletView?.presentedCardView {
-            walletView?.dismissPresentedCardView(animated: true)
+            
+            // MEXI NESSA POHA AKI (DAVID CAMURÇA = BEPID - AM)
+            //walletView?.dismissPresentedCardView(animated: true)
         } else {
             walletView?.present(cardView: self, animated: true)
         }
     }
     
     /** This method is called when the card view is panned. */
-    open func panned(gestureRecognizer: UIPanGestureRecognizer) {
-        
-        switch gestureRecognizer.state {
-        case .began:
-            walletView?.grab(cardView: self, popup: false)
-        case .changed:
-            updateGrabbedCardViewOffset(gestureRecognizer: gestureRecognizer)
-        default:
-            walletView?.releaseGrabbedCardView()
-        }
-        
-    }
     
     /** This method is called when the card view is long pressed. */
     open func longPressed(gestureRecognizer: UILongPressGestureRecognizer) {
@@ -75,7 +65,6 @@ open class CardView: UIView {
     // MARK: Private methods
     
     let tapGestureRecognizer    = UITapGestureRecognizer()
-    let panGestureRecognizer    = UIPanGestureRecognizer()
     let longGestureRecognizer   = UILongPressGestureRecognizer()
     
     func setupGestures() {
@@ -84,13 +73,6 @@ open class CardView: UIView {
         tapGestureRecognizer.delegate = self
         addGestureRecognizer(tapGestureRecognizer)
         
-        panGestureRecognizer.addTarget(self, action: #selector(CardView.panned(gestureRecognizer:)))
-        panGestureRecognizer.delegate = self
-        addGestureRecognizer(panGestureRecognizer)
-        
-        longGestureRecognizer.addTarget(self, action: #selector(CardView.longPressed(gestureRecognizer:)))
-        longGestureRecognizer.delegate = self
-        addGestureRecognizer(longGestureRecognizer)
         
     }
     
@@ -117,8 +99,6 @@ extension CardView: UIGestureRecognizerDelegate {
         
         if gestureRecognizer == longGestureRecognizer && presented {
             return false
-        } else if gestureRecognizer == panGestureRecognizer && !presented && walletView?.grabbedCardView != self {
-            return false
         }
         
         return true
@@ -130,7 +110,7 @@ extension CardView: UIGestureRecognizerDelegate {
      
      - parameter gestureRecognizer: An instance of a subclass of the abstract base class UIGestureRecognizer. This gesture-recognizer object is about to begin processing touches to determine if its gesture is occurring.
      - parameter otherGestureRecognizer: An instance of a subclass of the abstract base class UIGestureRecognizer.
-
+     
      */
     open func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return gestureRecognizer != tapGestureRecognizer && otherGestureRecognizer != tapGestureRecognizer

@@ -26,6 +26,9 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="eqAtual" destination="KrN-rk-goe" id="SLi-y8-L17"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>

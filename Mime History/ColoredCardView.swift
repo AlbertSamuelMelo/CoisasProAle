@@ -91,6 +91,8 @@ class ColoredCardView: CardView {
             session = WCSession.default()
         }
 
+        estaGanhado()
+        
     }
     
     @IBAction func acertou() {
@@ -154,26 +156,26 @@ class ColoredCardView: CardView {
     
     //MARK: - Watch Methods
     
-    var quantidadeDeTime = JogoViewController()
+    
+    
+    var quantidadeDe = Int(InfosViewController().sliderEquipes.currentValue!)
+    
     var grupos: [Grupo]? = []
     
-    /*func estaGanhado() {
+    func estaGanhado() {
         
+        self.grupos = GrupoStore.singleton.pegarGrupo(self.quantidadeDe)
         var pontuacaoDoTime: [(Int, String)] = []
         
-        for i in 0..<2 /*quantidadeDeTime.quantidadeDeTimes!*/ {
-            
-            let element1:(Int,String) = (
-            
+        grupos?.forEach({ (grupo) in
+            let element1:(Int, String) = (grupo.pontos!, grupo.nome!)
             pontuacaoDoTime.append(element1)
-            
-        }
+        })
         
         //Time com maior pontuaçao
         pontuacaoDoTime.sort(by: >)
         
         let send = pontuacaoDoTime[0].1
-        
         
         session?.sendMessage(["comando":send], replyHandler: { (response: [String : Any]) in
             if let response = response["Time"] as? String{
@@ -185,7 +187,7 @@ class ColoredCardView: CardView {
         })
         
         
-    }*/
+    }
     
     
 }

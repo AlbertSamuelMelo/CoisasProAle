@@ -5,7 +5,7 @@
 open class WalletView: UIView {
     
     // MARK: Public methods
-
+    
     /**
      Initializes and returns a newly allocated wallet view object with the specified frame rectangle.
      
@@ -78,7 +78,7 @@ open class WalletView: UIView {
      - parameter animated: If true, the view is being added to the wallet view using an animation.
      - parameter presented: If true, the view is being added to the wallet view and presented right way.
      - parameter completion: A block object to be executed when the animation sequence ends.
-
+     
      */
     open func insert(cardView: CardView, animated: Bool = false, presented: Bool = false,  completion: InsertionCompletion? = nil) {
         
@@ -133,6 +133,7 @@ open class WalletView: UIView {
             })
             
         } else {
+            
             remove(cardViews: [cardView])
             completion?()
         }
@@ -317,7 +318,7 @@ open class WalletView: UIView {
     }
     
     let scrollView = UIScrollView()
-
+    
     func prepareWalletView() {
         
         prepareScrollView()
@@ -387,7 +388,7 @@ open class WalletView: UIView {
             removalSuperview.clipsToBounds = true
             
             let overlay = UIView()
-            overlay.backgroundColor = .red
+            overlay.backgroundColor = .blue //coremocao
             
             self?.addSubview(removalSuperview)
             removalSuperview.addSubview(overlay)
@@ -407,9 +408,9 @@ open class WalletView: UIView {
                 UIView.addKeyframe(withRelativeStartTime: 0.6, relativeDuration: 0.7, animations: {
                     self?.remove(cardViews: [cardView])
                 })
-                    
-                UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.7, animations: {
                 
+                UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.7, animations: {
+                    
                     removalSuperview.frame = removalSuperview.frame.insetBy(dx: 0, dy: removalSuperview.frame.height/2)
                     cardView.alpha = 0.0
                     
@@ -474,19 +475,19 @@ open class WalletView: UIView {
         }
         
         if let grabbedCardView = grabbedCardView,
+            
             grabbedCardView == presentedCardView && grabbedCardView.presented == true,
             grabbedCardView.frame.origin.y > grabbedCardViewOriginalY + maximumCardViewHeight / 4 {
             
             let presentationCenter = convert(self.presentationCenter, from: scrollView)
             let yPoints = frame.maxY - (presentationCenter.y - maximumCardViewHeight / 2)
-            let velocityY = grabbedCardView.panGestureRecognizer.velocity(in: grabbedCardView).y
-            let animationDuration = min(WalletView.dismissingAnimationSpeed * 1.5, TimeInterval(yPoints / velocityY))
-            dismissPresentedCardView(animated: true, animationDuration: animationDuration)
         } else if let grabbedCardView = grabbedCardView,
+            
             presentedCardView == nil && grabbedCardView.presented == false,
             grabbedCardView.frame.origin.y < grabbedCardViewOriginalY - maximumCardViewHeight / 4 {
             present(cardView: grabbedCardView, animated: true)
         } else {
+            
             layoutWalletView(animationDuration: WalletView.grabbingAnimationSpeed)
         }
         
@@ -528,7 +529,7 @@ open class WalletView: UIView {
         let usableCardViewsHeight = walletHeaderHeight + insertedCardViews.map { _ in cardViewHeight }.reduce(0, { $0 + $1 } )
         
         distanceBetweenCardViews = max(minimalDistanceBetweenStackedCardViews, usableCardViewsHeight/CGFloat(insertedCardViews.count)/CGFloat(insertedCardViews.count))
-
+        
         if shouldLayoutWalletView {
             layoutWalletView()
             updateScrolViewContentSize()

@@ -13,6 +13,7 @@ import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var eqAtual: WKInterfaceLabel!
     let datagrupos: [(String, Int)] = [("Legionários", 0),("Beserkers", 1), ("Espartanos",2), ("Cruzados",3)]
     
     
@@ -111,6 +112,31 @@ extension InterfaceController: WCSessionDelegate{
             print("Chegou a equipe Cruzados")
             let response = ["Time":"Cruzados"]
             replyHandler(response)
+            
+        }else if message["Vez"] as? Int == 0{
+        //Time legionários
+            print("Vez 0")
+            eqAtual.setText("Legionários")
+            replyHandler(["Vez":"Legionários"])
+            
+        }else if message["Vez"] as? Int == 1{
+        //Time Beserkers
+            print("Vez 1")
+            eqAtual.setText("Beserkes")
+            replyHandler(["Vez":"Beserkers"])
+            
+        }else if message["Vez"] as? Int == 2{
+        //Time Espartanos
+            print("Vez 2")
+            eqAtual.setText("Espartanos")
+            replyHandler(["Vez":"Espartanos"])
+            
+        }else if message["Vez"] as? Int == 3{
+        //Time Cruzados
+            print("Vez 3")
+            eqAtual.setText("Cruzados")
+            replyHandler(["Vez":"Cruzados"])
+            
         }
         
         
