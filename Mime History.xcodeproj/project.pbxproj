@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A08AFCEA1DF10C02000D7849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFCE91DF10C02000D7849 /* AppDelegate.swift */; };
+		A08AFCEC1DF10C02000D7849 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFCEB1DF10C02000D7849 /* ViewController.swift */; };
+		A08AFCEF1DF10C02000D7849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08AFCED1DF10C02000D7849 /* Main.storyboard */; };
+		A08AFCF11DF10C02000D7849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08AFCF01DF10C02000D7849 /* Assets.xcassets */; };
+		A08AFCF41DF10C02000D7849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08AFCF21DF10C02000D7849 /* LaunchScreen.storyboard */; };
+		A08AFCF91DF10C03000D7849 /* Mime History WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A08AFCF81DF10C03000D7849 /* Mime History WatchKit App.app */; };
+		A08AFCFF1DF10C03000D7849 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08AFCFD1DF10C03000D7849 /* Interface.storyboard */; };
+		A08AFD011DF10C03000D7849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08AFD001DF10C03000D7849 /* Assets.xcassets */; };
+		A08AFD081DF10C03000D7849 /* Mime History WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A08AFD071DF10C03000D7849 /* Mime History WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A08AFD0F1DF10C03000D7849 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD0E1DF10C03000D7849 /* InterfaceController.swift */; };
+		A08AFD111DF10C03000D7849 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD101DF10C03000D7849 /* ExtensionDelegate.swift */; };
+		A08AFD131DF10C03000D7849 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD121DF10C03000D7849 /* NotificationController.swift */; };
+		A08AFD151DF10C03000D7849 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08AFD141DF10C03000D7849 /* ComplicationController.swift */; };
+		A08AFD171DF10C03000D7849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08AFD161DF10C03000D7849 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A08AFCFA1DF10C03000D7849 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A08AFCDE1DF10C02000D7849 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A08AFCF71DF10C03000D7849;
+			remoteInfo = "Mime History WatchKit App";
+		};
+		A08AFD091DF10C03000D7849 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A08AFCDE1DF10C02000D7849 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A08AFD061DF10C03000D7849;
+			remoteInfo = "Mime History WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A08AFD1E1DF10C03000D7849 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A08AFD081DF10C03000D7849 /* Mime History WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08AFD221DF10C03000D7849 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A08AFCF91DF10C03000D7849 /* Mime History WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A08AFCE61DF10C02000D7849 /* Mime History.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mime History.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A08AFCE91DF10C02000D7849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A08AFCEB1DF10C02000D7849 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A08AFCEE1DF10C02000D7849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A08AFCF01DF10C02000D7849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A08AFCF31DF10C02000D7849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A08AFCF51DF10C02000D7849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A08AFCF81DF10C03000D7849 /* Mime History WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mime History WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A08AFCFE1DF10C03000D7849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A08AFD001DF10C03000D7849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A08AFD021DF10C03000D7849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A08AFD071DF10C03000D7849 /* Mime History WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Mime History WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A08AFD0D1DF10C03000D7849 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A08AFD0E1DF10C03000D7849 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A08AFD101DF10C03000D7849 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A08AFD121DF10C03000D7849 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A08AFD141DF10C03000D7849 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A08AFD161DF10C03000D7849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A08AFD181DF10C03000D7849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A08AFCE31DF10C02000D7849 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08AFD041DF10C03000D7849 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A08AFCDD1DF10C02000D7849 = {
+			isa = PBXGroup;
+			children = (
+				A08AFCE81DF10C02000D7849 /* Mime History */,
+				A08AFCFC1DF10C03000D7849 /* Mime History WatchKit App */,
+				A08AFD0B1DF10C03000D7849 /* Mime History WatchKit Extension */,
+				A08AFCE71DF10C02000D7849 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A08AFCE71DF10C02000D7849 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A08AFCE61DF10C02000D7849 /* Mime History.app */,
+				A08AFCF81DF10C03000D7849 /* Mime History WatchKit App.app */,
+				A08AFD071DF10C03000D7849 /* Mime History WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A08AFCE81DF10C02000D7849 /* Mime History */ = {
+			isa = PBXGroup;
+			children = (
+				A08AFCE91DF10C02000D7849 /* AppDelegate.swift */,
+				A08AFCEB1DF10C02000D7849 /* ViewController.swift */,
+				A08AFCED1DF10C02000D7849 /* Main.storyboard */,
+				A08AFCF01DF10C02000D7849 /* Assets.xcassets */,
+				A08AFCF21DF10C02000D7849 /* LaunchScreen.storyboard */,
+				A08AFCF51DF10C02000D7849 /* Info.plist */,
+			);
+			path = "Mime History";
+			sourceTree = "<group>";
+		};
+		A08AFCFC1DF10C03000D7849 /* Mime History WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A08AFCFD1DF10C03000D7849 /* Interface.storyboard */,
+				A08AFD001DF10C03000D7849 /* Assets.xcassets */,
+				A08AFD021DF10C03000D7849 /* Info.plist */,
+			);
+			path = "Mime History WatchKit App";
+			sourceTree = "<group>";
+		};
+		A08AFD0B1DF10C03000D7849 /* Mime History WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A08AFD0E1DF10C03000D7849 /* InterfaceController.swift */,
+				A08AFD101DF10C03000D7849 /* ExtensionDelegate.swift */,
+				A08AFD121DF10C03000D7849 /* NotificationController.swift */,
+				A08AFD141DF10C03000D7849 /* ComplicationController.swift */,
+				A08AFD161DF10C03000D7849 /* Assets.xcassets */,
+				A08AFD181DF10C03000D7849 /* Info.plist */,
+				A08AFD0C1DF10C03000D7849 /* Supporting Files */,
+			);
+			path = "Mime History WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A08AFD0C1DF10C03000D7849 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A08AFD0D1DF10C03000D7849 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A08AFCE51DF10C02000D7849 /* Mime History */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A08AFD231DF10C03000D7849 /* Build configuration list for PBXNativeTarget "Mime History" */;
+			buildPhases = (
+				A08AFCE21DF10C02000D7849 /* Sources */,
+				A08AFCE31DF10C02000D7849 /* Frameworks */,
+				A08AFCE41DF10C02000D7849 /* Resources */,
+				A08AFD221DF10C03000D7849 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A08AFCFB1DF10C03000D7849 /* PBXTargetDependency */,
+			);
+			name = "Mime History";
+			productName = "Mime History";
+			productReference = A08AFCE61DF10C02000D7849 /* Mime History.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A08AFCF71DF10C03000D7849 /* Mime History WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A08AFD1F1DF10C03000D7849 /* Build configuration list for PBXNativeTarget "Mime History WatchKit App" */;
+			buildPhases = (
+				A08AFCF61DF10C03000D7849 /* Resources */,
+				A08AFD1E1DF10C03000D7849 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A08AFD0A1DF10C03000D7849 /* PBXTargetDependency */,
+			);
+			name = "Mime History WatchKit App";
+			productName = "Mime History WatchKit App";
+			productReference = A08AFCF81DF10C03000D7849 /* Mime History WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A08AFD061DF10C03000D7849 /* Mime History WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A08AFD1B1DF10C03000D7849 /* Build configuration list for PBXNativeTarget "Mime History WatchKit Extension" */;
+			buildPhases = (
+				A08AFD031DF10C03000D7849 /* Sources */,
+				A08AFD041DF10C03000D7849 /* Frameworks */,
+				A08AFD051DF10C03000D7849 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mime History WatchKit Extension";
+			productName = "Mime History WatchKit Extension";
+			productReference = A08AFD071DF10C03000D7849 /* Mime History WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A08AFCDE1DF10C02000D7849 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Anderson Oliveira";
+				TargetAttributes = {
+					A08AFCE51DF10C02000D7849 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2577FS5BXM;
+						ProvisioningStyle = Automatic;
+					};
+					A08AFCF71DF10C03000D7849 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2577FS5BXM;
+						ProvisioningStyle = Automatic;
+					};
+					A08AFD061DF10C03000D7849 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2577FS5BXM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A08AFCE11DF10C02000D7849 /* Build configuration list for PBXProject "Mime History" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A08AFCDD1DF10C02000D7849;
+			productRefGroup = A08AFCE71DF10C02000D7849 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A08AFCE51DF10C02000D7849 /* Mime History */,
+				A08AFCF71DF10C03000D7849 /* Mime History WatchKit App */,
+				A08AFD061DF10C03000D7849 /* Mime History WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A08AFCE41DF10C02000D7849 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08AFCF41DF10C02000D7849 /* LaunchScreen.storyboard in Resources */,
+				A08AFCF11DF10C02000D7849 /* Assets.xcassets in Resources */,
+				A08AFCEF1DF10C02000D7849 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08AFCF61DF10C03000D7849 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08AFD011DF10C03000D7849 /* Assets.xcassets in Resources */,
+				A08AFCFF1DF10C03000D7849 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08AFD051DF10C03000D7849 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08AFD171DF10C03000D7849 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A08AFCE21DF10C02000D7849 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08AFCEC1DF10C02000D7849 /* ViewController.swift in Sources */,
+				A08AFCEA1DF10C02000D7849 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08AFD031DF10C03000D7849 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08AFD131DF10C03000D7849 /* NotificationController.swift in Sources */,
+				A08AFD151DF10C03000D7849 /* ComplicationController.swift in Sources */,
+				A08AFD111DF10C03000D7849 /* ExtensionDelegate.swift in Sources */,
+				A08AFD0F1DF10C03000D7849 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A08AFCFB1DF10C03000D7849 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A08AFCF71DF10C03000D7849 /* Mime History WatchKit App */;
+			targetProxy = A08AFCFA1DF10C03000D7849 /* PBXContainerItemProxy */;
+		};
+		A08AFD0A1DF10C03000D7849 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A08AFD061DF10C03000D7849 /* Mime History WatchKit Extension */;
+			targetProxy = A08AFD091DF10C03000D7849 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A08AFCED1DF10C02000D7849 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A08AFCEE1DF10C02000D7849 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A08AFCF21DF10C02000D7849 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A08AFCF31DF10C02000D7849 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A08AFCFD1DF10C03000D7849 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A08AFCFE1DF10C03000D7849 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A08AFD191DF10C03000D7849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A08AFD1A1DF10C03000D7849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A08AFD1C1DF10C03000D7849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2577FS5BXM;
+				INFOPLIST_FILE = "Mime History WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andersonoliveira.Mime-History.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		A08AFD1D1DF10C03000D7849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2577FS5BXM;
+				INFOPLIST_FILE = "Mime History WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andersonoliveira.Mime-History.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		A08AFD201DF10C03000D7849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2577FS5BXM;
+				IBSC_MODULE = Mime_History_WatchKit_Extension;
+				INFOPLIST_FILE = "Mime History WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andersonoliveira.Mime-History.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		A08AFD211DF10C03000D7849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2577FS5BXM;
+				IBSC_MODULE = Mime_History_WatchKit_Extension;
+				INFOPLIST_FILE = "Mime History WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andersonoliveira.Mime-History.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		A08AFD241DF10C03000D7849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2577FS5BXM;
+				INFOPLIST_FILE = "Mime History/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andersonoliveira.Mime-History";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A08AFD251DF10C03000D7849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2577FS5BXM;
+				INFOPLIST_FILE = "Mime History/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andersonoliveira.Mime-History";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A08AFCE11DF10C02000D7849 /* Build configuration list for PBXProject "Mime History" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A08AFD191DF10C03000D7849 /* Debug */,
+				A08AFD1A1DF10C03000D7849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A08AFD1B1DF10C03000D7849 /* Build configuration list for PBXNativeTarget "Mime History WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A08AFD1C1DF10C03000D7849 /* Debug */,
+				A08AFD1D1DF10C03000D7849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A08AFD1F1DF10C03000D7849 /* Build configuration list for PBXNativeTarget "Mime History WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A08AFD201DF10C03000D7849 /* Debug */,
+				A08AFD211DF10C03000D7849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A08AFD231DF10C03000D7849 /* Build configuration list for PBXNativeTarget "Mime History" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A08AFD241DF10C03000D7849 /* Debug */,
+				A08AFD251DF10C03000D7849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A08AFCDE1DF10C02000D7849 /* Project object */;
+}
