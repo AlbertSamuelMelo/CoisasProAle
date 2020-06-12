@@ -65,9 +65,9 @@ class MBSliderView: UIView {
         }
     }
     
-    @IBInspectable var currentValue: Float? {
+    @IBInspectable var currentValue: CGFloat = 0.0 {
         didSet {
-            self.slider.value = self.currentValue!
+            self.slider.value = Float(self.currentValue)
             self.updateFrameForSlider(self.slider)
         }
     }
@@ -104,7 +104,7 @@ class MBSliderView: UIView {
         self.animateLabel = animateLabel
         self.minValue = minValue
         self.maxValue = maxValue
-        self.currentValue = currentValue
+        self.currentValue = CGFloat(currentValue)
         self.step = step
         self.units = (units != nil) ? units! : ""
         
@@ -140,7 +140,7 @@ class MBSliderView: UIView {
     }
     
     // MARK: - Event Listeners
-    func sliderPressed(_ sender: UISlider) {
+    @objc func sliderPressed(_ sender: UISlider) {
         
         self.updateCurrentLabelFrame()
         
@@ -156,7 +156,7 @@ class MBSliderView: UIView {
         }
     }
     
-    func sliderReleased(_ sender: UISlider) {
+    @objc func sliderReleased(_ sender: UISlider) {
         
         lblCurrent.sizeToFit()
         
@@ -168,28 +168,28 @@ class MBSliderView: UIView {
         }
     }
     
-    func sliderValueChanged(_ sender: UISlider) {
+    @objc func sliderValueChanged(_ sender: UISlider) {
         
-        currentValue = sender.value // rest of the magic is in didSet of currentValue :)
+        currentValue = CGFloat(sender.value) // rest of the magic is in didSet of currentValue :)
         self.updateCurrentLabelFrame()
         
-        DispatchQueue.main.async {
+        /*DispatchQueue.main.async {
             if let value = /*Float(self.lblCurrent.text!)*/ self.currentValue {
                 if self.previousValue != value {
                     self.previousValue = value
                     self.delegate?.sliderView(self, valueDidChange: value)
                 }
             }
-        }
+        }*/
     }
     
     // MARK: - Helper Methods
     func resetAllLabels() {
         self.setFrames()
         
-        previousValue = currentValue!
+        previousValue = Float(currentValue)
         
-        slider.value = currentValue!
+        slider.value = Float(currentValue)
         self.updateFrameForSlider(slider)
         self.setValue(minValue, withUnits: self.units, forLabel: lblMin, ignoreDecimals: ignoreDecimals)
         self.setValue(maxValue, withUnits: self.units, forLabel: lblMax, ignoreDecimals: ignoreDecimals)
@@ -230,8 +230,8 @@ class MBSliderView: UIView {
         lblMax.backgroundColor = UIColor.clear
         self.addSubview(lblMax)
         
-        self.bringSubview(toFront: slider)
-        self.bringSubview(toFront: lblCurrent)
+        self.bringSubviewToFront(slider)
+        self.bringSubviewToFront(lblCurrent)
         
         self.resetAllLabels()
     }
@@ -282,13 +282,13 @@ class MBSliderView: UIView {
 
                 //Troca os Assets
                 if self.slider.value == 1.0  {
-                    self.slider.setThumbImage(UIImage(named: "botao1"), for: UIControlState.normal)
+                    self.slider.setThumbImage(UIImage(named: "botao1"), for: UIControl.State.normal)
                 }else if self.slider.value == 2.0 {
-                    self.slider.setThumbImage(UIImage(named: "botao2"), for: UIControlState.normal)
+                    self.slider.setThumbImage(UIImage(named: "botao2"), for: UIControl.State.normal)
                 }else if self.slider.value == 3.0 {
-                    self.slider.setThumbImage(UIImage(named: "botao3"), for: UIControlState.normal)
+                    self.slider.setThumbImage(UIImage(named: "botao3"), for: UIControl.State.normal)
                 }else if self.slider.value == 4.0 {
-                    self.slider.setThumbImage(UIImage(named: "botao4"), for: UIControlState.normal)
+                    self.slider.setThumbImage(UIImage(named: "botao4"), for: UIControl.State.normal)
                 }else{}
                 
                 

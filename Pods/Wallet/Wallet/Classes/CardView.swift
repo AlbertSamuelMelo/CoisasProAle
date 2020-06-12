@@ -36,7 +36,7 @@ open class CardView: UIView {
     }
     
     /** This method is called when the card view is tapped. */
-    open func tapped() {
+    @objc open func tapped() {
         if let _ = walletView?.presentedCardView {
             return
         } else {

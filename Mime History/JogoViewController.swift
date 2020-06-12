@@ -56,7 +56,7 @@ class JogoViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         
         if WCSession.isSupported(){
-            session = WCSession.default()
+            session = WCSession.default
         }
         
         self.grupos = GrupoStore.singleton.pegarGrupo(self.quantidadeDeTimes!-1)
@@ -104,7 +104,7 @@ class JogoViewController: UIViewController, UICollectionViewDataSource, UICollec
             
     }
     
-    func showPlacar(_ notification: Notification) {
+    @objc func showPlacar(_ notification: Notification) {
 
         self.walletHeaderView.transform = CGAffineTransform(scaleX: 1.0, y: 0.0)
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
@@ -114,7 +114,7 @@ class JogoViewController: UIViewController, UICollectionViewDataSource, UICollec
         }, completion: nil)
     }
     
-    func dismissPlacar(_ notification: Notification) {
+    @objc func dismissPlacar(_ notification: Notification) {
         
         let pontua = notification.object as! Bool
         

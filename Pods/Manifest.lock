@@ -4,9 +4,13 @@ PODS:
 DEPENDENCIES:
   - Wallet
 
+SPEC REPOS:
+  trunk:
+    - Wallet
+
 SPEC CHECKSUMS:
   Wallet: 9f2942aa81aacf627fee3a42c11acf97fbacbd5d
 
 PODFILE CHECKSUM: 1f1d558944467816f06fdf0a7f75ceba7081e76d
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.9.1

@@ -113,7 +113,7 @@ class ColoredCardView: CardView {
         
         //verificando se e suportado
         if WCSession.isSupported(){
-            session = WCSession.default()
+            session = WCSession.default
         }
     }
     
@@ -136,7 +136,7 @@ class ColoredCardView: CardView {
     func playRegress(){
         timerCowdown = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.RegressiveCrono), userInfo: nil, repeats: true)
     }
-    func RegressiveCrono() {
+    @objc func RegressiveCrono() {
         
         timeBase = timeBase! - 1.0
         cowdownView.bounds.size.width = cowdownView.bounds.size.width - timeBonds!
@@ -158,7 +158,7 @@ class ColoredCardView: CardView {
     
     
     
-    var quantidadeDe = Int(InfosViewController().sliderEquipes.currentValue!)
+    var quantidadeDe = Int(InfosViewController().sliderEquipes.currentValue)
     
     var grupos: [Grupo]? = []
     

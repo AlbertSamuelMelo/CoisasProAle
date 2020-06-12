@@ -26,7 +26,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.andersonoliveira.Mime-History</string>
+	<string>com.albertestes.Mime-History</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

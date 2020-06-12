@@ -108,11 +108,11 @@ class InfosViewController: UIViewController, UICollectionViewDataSource, UIColle
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let JogoView = segue.destination as! JogoViewController
-        JogoView.timeBase = roundUp(number: sliderTempo.currentValue!)
+        JogoView.timeBase = roundUp(number: Float(sliderTempo.currentValue))
         
         //MARK: Segue que manda a quantidade de equipe
         let quantidadeEquipe = segue.destination as! JogoViewController
-        quantidadeEquipe.quantidadeDeTimes = roundUp(number:sliderEquipes.currentValue!)
+        quantidadeEquipe.quantidadeDeTimes = roundUp(number:Float(sliderEquipes.currentValue))
     }
     
     func roundUp(number: Float) -> Int {
